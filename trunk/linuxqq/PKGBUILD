@@ -1,20 +1,18 @@
 # Contributor: leafduo <leafduo@gmail.com>
 pkgname=linuxqq
-pkgver=1.0_Preview1
-pkgrel=2
-pkgdesc="QQ for Linux 1.0 Preview"
+pkgver=preview1.0_2
+pkgrel=1
+pkgdesc="QQ - The most popular free instant messaging program in China."
 url="http://www.qq.com/"
-license=("copyrighted")
-depends=('gtk2>=2.10')
+license=("custom")
+depends=('gtk2>=2.10','cairo','glibc>=2.0','pango>=1.0','glib2>=2.0')
 arch=(i686)
 makedepends=('tar')
-source=(http://dl_dir.qq.com/linuxqq/linuxqq_1.0-Preview1_i386.deb)
-md5sums=('cf95014386fb69981ba30444b06aedb5')
+source=(http://dl_dir.qq.com/linuxqq/linuxqq_preview1.0-2_i386.deb)
+md5sums=('623ee5f58cfa0a242935f1bac9c45255')
 build() {
     cd $startdir/src/
-    ar vx linuxqq_1.0-Preview1_i386.deb
+    ar vx linuxqq_preview1.0-2_i386.deb
     tar xfz data.tar.gz
-    chmod 0755 $startdir/src/usr/bin/QQ $startdir/src/usr/share/apps/Tencent/QQ/*
     cp -a $startdir/src/usr $startdir/pkg
-    ln -s /usr/bin/QQ $startdir/pkg/usr/bin/qq
 }
