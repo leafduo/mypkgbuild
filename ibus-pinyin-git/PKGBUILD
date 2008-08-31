@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="pinyin input method for ibus"
 arch=('i686' 'x86_64')
 license=('GPL')
-depends=('python' 'dbus-python>=0.83.0' 'automake' 'autoconf')
+depends=('python' 'dbus-python>=0.83.0' 'automake' 'autoconf' 'ibus-git')
 makedepends=('git')
 url="http://code.google.com/p/ibus/"
 source=()
