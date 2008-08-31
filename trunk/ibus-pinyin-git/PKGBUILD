@@ -16,7 +16,7 @@ build() {
     cd $startdir/src
     git clone git://github.com/phuang/ibus-pinyin.git ibus-pinyin
     cd ibus-pinyin
-    ./autogen.sh --prefix=$startdir/pkg/usr
+    ./autogen.sh --prefix=/usr
     make || return 1
     make DESTDIR=$pkgdir install || return 1
 }
