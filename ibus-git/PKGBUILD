@@ -18,7 +18,7 @@ build() {
     git clone git://github.com/phuang/ibus.git ibus
     cd ibus
     ./autogen.sh --prefix=/usr
-    make
-    make DESTDIR=$pkgdir install
+    make || return 1
+    make DESTDIR=$pkgdir install || return 1
 }
 
