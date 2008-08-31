@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="a next generation input framework."
 arch=('i686' 'x86_64')
 license=('GPL')
-depends=('python' 'dbus-python>=0.83.0' 'automake' 'autoconf')
+depends=('python>=2.5' 'dbus-python>=0.83.0' 'automake' 'autoconf')
 makedepends=('git')
 url="http://code.google.com/p/ibus/"
 source=()
