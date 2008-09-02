@@ -10,7 +10,7 @@ depends=('python>=2.5' 'dbus-python>=0.83.0' 'automake' 'autoconf' 'ibus-git')
 makedepends=('git')
 url="http://code.google.com/p/ibus/"
 source=()
-md5sum=()
+md5sums=()
 
 build() {
     cd $startdir/src
