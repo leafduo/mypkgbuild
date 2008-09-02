@@ -1,7 +1,7 @@
 #Contributor: leafduo<leafduo@gmail.com>
 
 pkgname=ibus-git
-pkgver=git
+pkgver=20080902
 pkgrel=1
 pkgdesc="a next generation input framework."
 arch=('i686' 'x86_64')
