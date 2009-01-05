@@ -1,7 +1,7 @@
 # Contributor: leafduo <leafduo@gmail.com>
 pkgname=linuxqq
 pkgver=109
-pkgrel=1
+pkgrel=2
 pkgdesc="QQ - The most popular free instant messaging program in China."
 url="http://www.qq.com/"
 license=("custom")
@@ -17,4 +17,6 @@ build() {
     ar vx linuxqq_v1.0.2-beta1_i386.deb
     tar xfz data.tar.gz
     cp -a $startdir/src/usr $startdir/pkg
+    chmod 755 $startdir/pkg/usr/share/doc/linuxqq
+    chmod 644 $startdir/pkg/usr/share/doc/linuxqq/qq
 }
