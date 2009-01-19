@@ -1,7 +1,7 @@
 # Contributor: leafduo <leafduo@gmail.com>
 pkgname=linuxqq
-pkgver=109
-pkgrel=2
+pkgver=110
+pkgrel=1
 pkgdesc="QQ - The most popular free instant messaging program in China."
 url="http://www.qq.com/"
 license=("custom")
@@ -11,7 +11,7 @@ conflicts=('qq')
 arch=('i686')
 makedepends=('tar')
 source=(http://dl_dir.qq.com/linuxqq/linuxqq_v1.0.2-beta1_i386.deb)
-md5sums=('f88024bebfd2938a5309aadc4fbc641b')
+md5sums=('e269697840f53a8ea8306e600fbd4ed7')
 build() {
     cd $startdir/src/
     ar vx linuxqq_v1.0.2-beta1_i386.deb
